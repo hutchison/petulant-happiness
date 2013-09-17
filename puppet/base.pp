@@ -4,7 +4,7 @@ exec { 'apt-update':
 
 Exec['apt-update'] -> Package <| |>
 
-package { ['vim', 'git', 'postgresql']:
+package { ['vim', 'git', 'postgresql', 'python-virtualenv']:
     ensure => 'present',
 }
 
